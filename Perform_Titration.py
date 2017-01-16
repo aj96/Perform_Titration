@@ -59,7 +59,7 @@ def TitrateBaseWithAcid():
         while Vt != 0:
             Vt = float(input("Enter volume of titrant added (liters). Enter 0 to stop> "))
             while Vt >= (Co*Vo)/Ct:
-                print("Volume of titrant is too large. You have gone past the equivalence point.")
+                print("Volume of titrant is too large. You are before or at the equivalence point.")
                 Vt = float(input("Enter volume of titrant added (liters). Enter 0 to stop> "))
                 
             
@@ -98,7 +98,10 @@ def TitrateBaseWithAcid():
         Cotwo = ((Co*Vo)/(Vte+Vo))
         Vt = 0.1
         while Vt != 0:        
-            Vt = float(input("Enter volume (liters) of titrant added. Enter 0 to stop> "))
+            Vt = float(input("Enter volume of titrant added (liters). Enter 0 to stop> "))
+            while Vt <= (Co*Vo)/Ct:
+                print("Volume of titrant is too small. You are before or at the equivalence point.")
+                Vt = float(input("Enter volume of titrant added (liters). Enter 0 to stop> "))
             if Vt!= 0:
                 CoTwo = (K - ((K**2 + 4*(K*Cotwo)))**0.5)/-2
                 pH = -math.log10(((Ct*Vt-Co*Vo)/(Vt+Vo)) + CoTwo)            
@@ -137,6 +140,9 @@ def TitrateAcidWithBase():
         Vt = 0.1
         while Vt != 0:
             Vt = float(input("Enter volume of titrant added (liters). Enter 0 to stop> "))
+            while Vt >= (Co*Vo)/Ct:
+                print("Volume of titrant is too large. You are before or at the equivalence point.")
+                Vt = float(input("Enter volume of titrant added (liters). Enter 0 to stop> "))
             if Vt != 0:
                 pH_one = -math.log10(((-K*Vo-K*Vt-Ct*Vt)+ (((K*Vo+K*Vt+Ct*Vt)**2)-(4*(Vt+Vo)*(K*Ct*Vt-K*Co*Vo)))**0.5)/(2*(Vt+Vo)))
                 
@@ -178,7 +184,10 @@ def TitrateAcidWithBase():
         Cotwo = ((Co*Vo)/(Vte+Vo))
         Vt = 0.1
         while Vt != 0:        
-            Vt = float(input("Enter volume (liters) of titrant added. Enter 0 to stop> "))
+            Vt = float(input("Enter volume of titrant added (liters). Enter 0 to stop> "))
+            while Vt <= (Co*Vo)/Ct:
+                print("Volume of titrant is too small. You are before or at the equivalence point.")
+                Vt = float(input("Enter volume of titrant added (liters). Enter 0 to stop> "))
             if Vt != 0:
                 CTwo = (K - ((K**2 + 4*(K*Cotwo)))**0.5)/-2
                 pH = 14+ math.log10(((Ct*Vt-Co*Vo)/(Vt+Vo)) + CTwo)            
