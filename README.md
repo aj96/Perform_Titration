@@ -7,7 +7,7 @@ About titration: https://en.wikipedia.org/wiki/Titration
 
 This program allows the user to calculate the pH of a solution after adding some liters of titrant. It also allows the user to calculate how many liters of the titrant are needed to reach the equivalence point. Please note that the program cannot accept numbers in scientific notation.
 
-A pdf in this repository to provide an example of how a Titration problem is solved by hand. Problem 16 in the pdf involves titrating an acid with a base. Cyanic Acid is the initial solution, and Rubidium Hydorixde is the titrant. 
+A pdf in this repository is provided to show an example of how a Titration problem is solved by hand. Problem 16 in the pdf involves titrating an acid with a base. Cyanic Acid is the initial solution, and Rubidium Hydorixde is the titrant. 
 
 pKa is 3.66 which yields a Ka of: 0.000219
 
