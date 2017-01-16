@@ -22,7 +22,7 @@ You can solve parts b, c, and d of problem 16 using this program. Part b is befo
 Motivation
 ----------
 
-In chemistry class, solving for pH by hand, using ICE tables and sometimes having to solve the quadratic formula was a pain. You also had to take one of three different mathematical approaches depending on if you were before the quivalence point, at the equivalence point, or after the equivalence point. So I wrote this program to do it all for me.
+In chemistry class, solving for pH by hand, using ICE tables and sometimes having to solve the quadratic formula was a pain. You also had to take one of three different mathematical approaches depending on if you were before the equivalence point, at the equivalence point, or after the equivalence point. So I wrote this program to do it all for me.
 
 Installation
 ------------
